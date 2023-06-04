@@ -6,7 +6,7 @@ body {
 
 }
 
-#box-shadow {
+#box-shadow, #box-shadow-devs {
   text-shadow: 0em 0.01em 0.2em rgb(148, 148, 148);
 }
 
@@ -76,7 +76,13 @@ h6 {
 }
 
 /*queries para gif*/
-@media (max-width: 575px) {
+@media (max-width: 280px) {
+  #gif {
+    width: 150px;
+  }
+}
+
+@media (min-width:281px) and (max-width: 575px) {
   #gif {
     width: 200px;
   }
@@ -170,9 +176,7 @@ h6 {
   width: 400px;
   height: auto;
 }
-/* Alterar o tamanho do h5, do p e das imagens do carousel de acordo com a resolução */
 
-/* Para dispositivos com largura de tela menor que 768px */
 @media (max-width: 767px) {
   .carrosel{
     font-size: 35px;
@@ -187,7 +191,6 @@ h6 {
   }
 }
 
-/* Para dispositivos com largura de tela menor que 576px */
 @media (max-width: 575px) {
   .carrosel{
     font-size: 30px;
@@ -203,10 +206,10 @@ h6 {
   }
 }
 
-/* Para dispositivos com largura de tela menor que 370px */
+
 @media (max-width: 369px) {
   .carrosel{
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .carousel-inner img {
@@ -219,10 +222,9 @@ h6 {
   }
 }
 
-/* Para dispositivos com largura de tela menor que 358px */
 @media (max-width: 357px) {
   .carrosel{
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .carousel-inner img {
@@ -233,4 +235,81 @@ h6 {
     display: block !important;
     opacity: 1 !important;
   }
+}
+
+.qrcode{
+  width: 150px;
+  height: auto; 
+}
+
+.textoinst p{
+  font-size: 30px;
+}
+
+.textoinst i{
+  font-size: 20px;
+}
+
+.colored-text1{
+  color: #5E68C2;
+}
+
+@media (max-width: 575.98px) {
+  .bloco {
+    padding: 0px;
+    max-width: 100%; 
+    overflow-x: hidden; 
+  }
+  .textoinst p {
+    font-size: 20px;
+    padding: 0;
+  }
+  .textoinst i {
+    font-size: 15px;
+    padding: 0px;
+  }
+}
+
+.modal {
+  display: none; /* Oculta o modal por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative; /* Adiciona posicionamento relativo para posicionar o botão "X" */
+}
+
+.modal-content p, a, li, ul{
+  text-align: justify;
+}
+
+.modal-close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
