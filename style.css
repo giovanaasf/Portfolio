@@ -31,9 +31,7 @@ button.btn {
   height: auto;
 }
 
-p {
-  font-size: 20px;
-}
+
 
 .img {
   height: 40px;
@@ -138,7 +136,7 @@ h6 {
   }
 }
 
-.carousel-item img {
+.carousel1 img {
   width: auto;
   height: 500px;
 
@@ -160,10 +158,79 @@ h6 {
 }
 
 .carousel-indicators {
-  bottom: -30px; /* Ajuste esse valor para controlar a distância dos indicadores em relação às imagens */
+  bottom: -30px;
 } 
 
 .carousel-caption{
   top:-10px;
   font-size: 10px;
+}
+
+.carousel2 img{
+  width: 400px;
+  height: auto;
+}
+/* Alterar o tamanho do h5, do p e das imagens do carousel de acordo com a resolução */
+
+/* Para dispositivos com largura de tela menor que 768px */
+@media (max-width: 767px) {
+  .carrosel{
+    font-size: 35px;
+  }
+  .carousel-inner img {
+    max-width: 80%;
+    height: auto;
+  }
+  .carousel-caption {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Para dispositivos com largura de tela menor que 576px */
+@media (max-width: 575px) {
+  .carrosel{
+    font-size: 30px;
+  }
+
+  .carousel-inner img {
+    max-width: 70%;
+    height: auto;
+  }
+  .carousel-caption {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Para dispositivos com largura de tela menor que 370px */
+@media (max-width: 369px) {
+  .carrosel{
+    font-size: 22px;
+  }
+
+  .carousel-inner img {
+    max-width: 60%;
+    height: auto;
+  }
+  .carousel-caption {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Para dispositivos com largura de tela menor que 358px */
+@media (max-width: 357px) {
+  .carrosel{
+    font-size: 18px;
+  }
+
+  .carousel-inner img {
+    max-width: 50%;
+    height: auto;
+  }
+  .carousel-caption {
+    display: block !important;
+    opacity: 1 !important;
+  }
 }
